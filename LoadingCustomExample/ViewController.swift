@@ -9,17 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var loading : CustomLoading?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.loading = CustomLoading(red: 0, green: 110.0, blue: 201.0)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func start(sender: AnyObject) {
+        self.loading?.start()
     }
-
-
+    
+    @IBAction func stop(sender: AnyObject) {
+        self.loading?.stop()
+    }
 }
 

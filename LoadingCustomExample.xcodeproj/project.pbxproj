@@ -14,6 +14,8 @@
 		A456F3321BFFB35600CEE70A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A456F3301BFFB35600CEE70A /* LaunchScreen.storyboard */; };
 		A456F33D1BFFB35600CEE70A /* LoadingCustomExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A456F33C1BFFB35600CEE70A /* LoadingCustomExampleTests.swift */; };
 		A456F3481BFFB35600CEE70A /* LoadingCustomExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A456F3471BFFB35600CEE70A /* LoadingCustomExampleUITests.swift */; };
+		A456F3571BFFB51700CEE70A /* CustomLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A456F3551BFFB51700CEE70A /* CustomLoading.swift */; };
+		A456F35B1BFFB7DD00CEE70A /* spinner.png in Resources */ = {isa = PBXBuildFile; fileRef = A456F35A1BFFB7DD00CEE70A /* spinner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A456F3431BFFB35600CEE70A /* LoadingCustomExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingCustomExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A456F3471BFFB35600CEE70A /* LoadingCustomExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCustomExampleUITests.swift; sourceTree = "<group>"; };
 		A456F3491BFFB35600CEE70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A456F3551BFFB51700CEE70A /* CustomLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoading.swift; sourceTree = "<group>"; };
+		A456F35A1BFFB7DD00CEE70A /* spinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				A456F3271BFFB35600CEE70A /* AppDelegate.swift */,
+				A456F3551BFFB51700CEE70A /* CustomLoading.swift */,
+				A456F35A1BFFB7DD00CEE70A /* spinner.png */,
 				A456F3291BFFB35600CEE70A /* ViewController.swift */,
-				A456F32B1BFFB35600CEE70A /* Main.storyboard */,
-				A456F32E1BFFB35600CEE70A /* Assets.xcassets */,
 				A456F3301BFFB35600CEE70A /* LaunchScreen.storyboard */,
-				A456F3331BFFB35600CEE70A /* Info.plist */,
+				A456F32B1BFFB35600CEE70A /* Main.storyboard */,
+				A456F3591BFFB54900CEE70A /* SuportingFiles */,
 			);
 			path = LoadingCustomExample;
 			sourceTree = "<group>";
@@ -123,6 +128,15 @@
 				A456F3491BFFB35600CEE70A /* Info.plist */,
 			);
 			path = LoadingCustomExampleUITests;
+			sourceTree = "<group>";
+		};
+		A456F3591BFFB54900CEE70A /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A456F3331BFFB35600CEE70A /* Info.plist */,
+				A456F32E1BFFB35600CEE70A /* Assets.xcassets */,
+			);
+			name = SuportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A456F3321BFFB35600CEE70A /* LaunchScreen.storyboard in Resources */,
+				A456F35B1BFFB7DD00CEE70A /* spinner.png in Resources */,
 				A456F32F1BFFB35600CEE70A /* Assets.xcassets in Resources */,
 				A456F32D1BFFB35600CEE70A /* Main.storyboard in Resources */,
 			);
@@ -256,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A456F3571BFFB51700CEE70A /* CustomLoading.swift in Sources */,
 				A456F32A1BFFB35600CEE70A /* ViewController.swift in Sources */,
 				A456F3281BFFB35600CEE70A /* AppDelegate.swift in Sources */,
 			);
@@ -399,7 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoadingCustomExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.renato.push.LoadingCustomExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renato.LoadingCustomExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -410,7 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoadingCustomExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.renato.push.LoadingCustomExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renato.LoadingCustomExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
